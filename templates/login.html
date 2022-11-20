@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="w-75 h-100 content-in-middle">  
+        <div class="card bg-secondary">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <label for="txtEmail">Email</label>
+                        <input id="txtEmail" type="email" class="form-control" name="email" required placeholder="E-Mail">
+                    </div>
+                    <div class="row">
+                        <label for="txtPassword">Password</label>
+                        <input id="txtPassword" type="password" class="form-control" name="password" required placeholder="Password">
+                    </div>
+                    <div class="row mt-5">
+                        <button type="submit" class="btn btn-block px-5 mx-5 btn-success">Login</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card-footer">
+                test
+            </div> -->
+        </div>
+    </div>
+
+{% endblock %}
